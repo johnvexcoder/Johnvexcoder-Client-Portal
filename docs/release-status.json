@@ -1,0 +1,36 @@
+{
+  "updated": "2026-10-24 Asia/Manila",
+  "localVerification": "35 unit tests, 37 integration tests, typecheck, lint, format, build, deployment build/dry run, migration history, secret scans and 30-table backup comparison passed. These are recorded results, not checks rerun by this command.",
+  "gates": [
+    {
+      "name": "Hosted Workers Free authentication/MFA",
+      "status": "pending",
+      "reason": "Default hashing and complete flows need actual hosted CPU evidence; local wall time does not prove the Free limit."
+    },
+    {
+      "name": "Finished PDF export",
+      "status": "pending",
+      "reason": "Unicode, layout, deterministic regeneration/retention and Free CPU are unproven. Only frozen print reference and JSON are implemented."
+    },
+    {
+      "name": "Current browser/mobile/accessibility QA",
+      "status": "blocked",
+      "reason": "User approved checks, but a saved browser permission/managed policy still denied localhost:5175. No workaround was attempted."
+    },
+    {
+      "name": "Interactive backup recovery",
+      "status": "pending",
+      "reason": "All application rows/triggers and SQLite integrity match; restored interactive account/MFA login still needs rehearsal with the matching secret."
+    },
+    {
+      "name": "Production runtime and owner release approval",
+      "status": "pending",
+      "reason": "Nonlocal APIs remain closed and identities remain synthetic. Review evidence and the production runtime change before publishing. No deployment is authorized by configuration generation."
+    },
+    {
+      "name": "Owner-published portal policies",
+      "status": "pending",
+      "reason": "Privacy Notice and Terms links are implemented. Owner-reviewed policy text and versions must be supplied and explicitly published; defaults remain blank/unpublished."
+    }
+  ]
+}

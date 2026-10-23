@@ -1,0 +1,463 @@
+.operations-panel {
+  max-width: 900px;
+}
+.operations-form {
+  display: grid;
+  gap: 24px;
+}
+.operations-form fieldset,
+.workflow-card {
+  min-width: 0;
+  border: 1px solid #e1e7f0;
+  border-radius: 9px;
+  padding: 25px;
+  background: white;
+}
+.operations-form legend {
+  padding: 0 9px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.operations-form label {
+  font-size: 12px;
+  margin: 17px 0;
+}
+.operations-form input,
+.operations-form textarea {
+  margin-top: 8px;
+}
+.operations-form small {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #7c8a9f;
+}
+.inline-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+.inline-check input {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  margin: 3px 0 0;
+}
+.operations-form > .primary {
+  justify-self: start;
+}
+.success-panel {
+  padding: 15px 18px;
+  background: #edf8f3;
+  color: #46776b;
+  border: 1px solid #d9eae4;
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+.project-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  border-bottom: 1px solid #e0e6f0;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+}
+.project-tabs button {
+  white-space: nowrap;
+  background: transparent;
+  color: #7a8ba3;
+  padding: 10px 13px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+.project-tabs button.active {
+  background: #e8eff9;
+  color: #3e649c;
+}
+.structured-items {
+  display: grid;
+  gap: 16px;
+  margin-top: 12px;
+}
+.structured-item {
+  border: 1px solid #dde5f0;
+  border-radius: 8px;
+  background: #fafcff;
+  padding: 20px;
+  min-width: 0;
+}
+.structured-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+.structured-item-header strong {
+  font-size: 11px;
+}
+.structured-item-header > div {
+  display: flex;
+  gap: 4px;
+}
+.structured-item label {
+  font-size: 11px;
+  margin-top: 15px;
+}
+.structured-item input,
+.structured-item textarea,
+.structured-item select {
+  font-size: 12px;
+  margin-top: 7px;
+}
+.structured-item-header button {
+  padding: 7px;
+  min-width: 29px;
+  min-height: 29px;
+  background: white;
+  border: 1px solid #e0e6ef;
+  border-radius: 4px;
+  color: #8293ab;
+}
+.structured-item-header button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.collection-add {
+  margin-top: 14px;
+  font-size: 11px;
+}
+.field-select {
+  margin-top: 12px;
+}
+.multiselect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+.multiselect-grid label {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 11px;
+}
+.multiselect-grid input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+}
+.content-preview {
+  display: grid;
+  gap: 18px;
+}
+.preview-section {
+  border: 1px solid #dfe6f0;
+  border-radius: 9px;
+  background: white;
+  padding: 25px;
+  min-width: 0;
+}
+.preview-section h2 {
+  font-size: 23px;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  margin: 12px 0 18px;
+}
+.preview-section dl {
+  margin: 0;
+  display: grid;
+  gap: 15px;
+}
+.preview-section dt {
+  font-size: 10px;
+  color: #8393ab;
+}
+.preview-section dd {
+  margin: 4px 0 0;
+  font-size: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+.preview-hero {
+  background: #eef3fa;
+  position: relative;
+  padding: 35px;
+  border-radius: 8px;
+  border: 1px dashed #c6d3e6;
+  margin: 20px 0;
+}
+.preview-hero h3 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  max-width: 470px;
+  margin-bottom: 14px;
+}
+.preview-placeholder {
+  background: #e3eaf4;
+  border: 1px dashed #beccdf;
+  color: #8497b1;
+  text-align: center;
+  padding: 25px;
+  margin: 15px 0;
+  border-radius: 6px;
+  font-size: 11px;
+}
+.lease-note {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 10px;
+  color: #8a7e5d;
+  padding: 9px 12px;
+  background: #fff9e9;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+.route-counter {
+  font-size: 10px;
+  color: #6d86a8;
+  margin: 10px;
+}
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.workflow-card h2 {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 14px 0;
+}
+.workflow-card label {
+  font-size: 11px;
+  margin-top: 17px;
+}
+.workflow-card .primary {
+  margin-top: 20px;
+}
+.workflow-card textarea,
+.workflow-card input,
+.workflow-card select {
+  font-size: 12px;
+  margin-top: 8px;
+}
+.workflow-card p {
+  overflow-wrap: anywhere;
+}
+.workflow-card details {
+  padding: 12px 0;
+  font-size: 11px;
+}
+.workflow-card code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.inbox-list {
+  display: grid;
+  gap: 14px;
+}
+.inbox-item {
+  background: white;
+  border: 1px solid #e0e7f0;
+  border-radius: 8px;
+  padding: 22px;
+}
+.inbox-item h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.inbox-item p {
+  font-size: 12px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.inbox-item .reply {
+  padding: 14px 17px;
+  margin-top: 14px;
+  border-radius: 6px;
+  background: #f2f5fa;
+  border: 1px solid #e7edf5;
+}
+.inbox-item textarea {
+  margin: 15px 0;
+  font-size: 12px;
+}
+.issue-list {
+  padding: 15px 18px;
+  background: #fff9ed;
+  border: 1px solid #eadfc9;
+  border-radius: 7px;
+  font-size: 11px;
+  line-height: 1.9;
+}
+.item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+.item-actions input,
+.item-actions select {
+  max-width: 180px;
+  font-size: 11px;
+}
+.scope-select-grid {
+  display: grid;
+  gap: 12px;
+}
+.scope-select-grid label {
+  font-size: 11px;
+}
+.scope-select-grid select {
+  font-size: 12px;
+  margin-top: 7px;
+}
+.help-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 11px;
+  color: #5b799d;
+  margin-top: 20px;
+}
+.presence-dot {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #b5c1ce;
+  margin-right: 5px;
+}
+.presence-dot.online {
+  background: #6eaa91;
+}
+.release-gaps {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 11px;
+  line-height: 2;
+}
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.preview-grid > article {
+  background: #f2f5fa;
+  padding: 18px;
+  border-radius: 6px;
+  border: 1px solid #e3e9f2;
+}
+.preview-grid h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.preview-grid p {
+  font-size: 11px;
+  line-height: 1.7;
+}
+.review-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+.status-select {
+  max-width: 200px;
+  font-size: 11px;
+}
+.unsure-list {
+  display: grid;
+  gap: 7px;
+  margin: 14px 0;
+}
+.unsure-list label {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.unsure-list input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+}
+.print-reference {
+  display: none;
+}
+@media (max-width: 800px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+  .preview-grid {
+    grid-template-columns: 1fr;
+  }
+  .operations-form fieldset,
+  .workflow-card,
+  .preview-section {
+    padding: 22px;
+  }
+  .multiselect-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media print {
+  .sidebar,
+  .topbar,
+  .project-tabs,
+  .review-toolbar,
+  .help-links,
+  .primary,
+  .secondary,
+  .text-button,
+  .workspace-footnote {
+    display: none !important;
+  }
+  .workspace-main {
+    margin: 0;
+    width: 100%;
+  }
+  .content {
+    padding: 0;
+  }
+  .preview-section {
+    break-inside: auto;
+  }
+  .preview-section h2 {
+    break-after: avoid;
+  }
+  .print-reference {
+    display: block;
+  }
+  body {
+    color: #102540;
+    background: white;
+  }
+}
+
+.operations-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 18px;
+}
+.operations-summary strong {
+  display: block;
+  font-size: 28px;
+  font-weight: 500;
+}
+.operations-summary span {
+  font-size: 11px;
+  color: var(--muted);
+}
